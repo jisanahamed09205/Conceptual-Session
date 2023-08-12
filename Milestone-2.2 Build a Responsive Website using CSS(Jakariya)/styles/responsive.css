@@ -1,0 +1,62 @@
+/* For medium devices */
+@media screen and (max-width:800px) {
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For small device */
+@media screen and (max-width:425px) {
+    .nav-container, .nav-item-container{
+        flex-direction: column;
+        
+    }
+    .nav-item-container a{
+        margin-top: 20px;
+        
+    }
+    .nav-item-container{
+        width: 100%;
+    }
+    .nav-item-container, .login-btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .logo-container{
+        font-size: 1rem;
+    }
+    /* Nav responsive end */
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-text, .banner-img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner-text h1{
+        font-size: 30px;
+    }
+    .banner-text p{
+        font-size: 25px;
+    }
+    .fa-brands{
+        font-size: 30px;
+    }
+    /* Banner responsive end */
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    /* Discount section */
+    .discount-container{
+        flex-direction: column;
+    }
+    .discount-text, .discount-img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,224 @@
+/* Common shared style start */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Common shared style end */
+
+/* Nav style section start */
+nav{
+    background-color: #9376e0;
+}
+.nav-container{
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    /* Highlighted */
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.logo-container{
+    display: flex;
+    width: 50%;
+}
+.logo-container img{
+    width: 50px;
+    object-fit:cover;
+    margin-right: 20px;
+}
+.logo-container p{
+    font-size: 30px;
+    text-align: center;
+}
+.nav-item-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+.hive-color{
+    color: #e893cf;
+}
+.nav-item-container .login-btn{
+    background-color: #e893cf;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+/* Nav style section end */
+
+/* Banner style section */
+.banner-container{
+    /* Highlighted */
+    margin: 50px auto 0;
+    max-width: 1200px;
+    min-height: 50px;
+    display: flex;
+    background-color: #e6e9eb;
+    padding: 10px;
+    border-radius: 10px;
+}
+.banner-text{
+    width: 50%;
+    text-align: center;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    /* Highlighted */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.banner-text h1{
+    font-size: 50px;
+    /* Highlighted */
+    background-image: linear-gradient(to bottom,#9376e0,#e893cf);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.banner-text p{
+    font-size: 45px;
+    /* Highlighted */
+    font-family: 'Dancing Script', cursive;
+}
+.icon-container{
+    margin-bottom:30px;
+    display: flex;
+    /* Highlighted */
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto 40px;
+}
+.fa-brands{
+    font-size: 50px;
+}
+.banner-btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #9376e0;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+/* Banner section style end */
+
+/* Product style section */
+.grid-container{
+    /* Highlighted */
+    display: grid;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    min-height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.single-product{
+    background-color: rgba(112, 128, 144, 0.281);
+    border-radius: 10px;
+    padding: 0 10px;
+    /* Highlighted */
+    box-shadow: 2px 2px 4px black;
+}
+.single-product img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.product-icon-name-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-icon{
+    font-size:20px;
+}
+.product-icon-name-container span{
+    padding: 10px;
+    background-color: #9376e0;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: white;
+}
+/* Product style section end */
+
+/* Discount style */
+.discount-section{
+    background-color: #9376e0;
+    min-height: 500px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.discount-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+.discount-img{
+    width: 50%;
+    position: relative;
+}
+.discount-img img{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.discount-text{
+    width: 50%;
+}
+.discount-number{
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 65%;
+    top: 5%;
+}
+/* Review section style */
+.review-container{
+    /* min-height: 200px; */
+    border: 1px solid red;
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-content: center;
+}
+.single-review{
+    border: 1px solid green;
+    flex-basis: 300px;
+    background-color: #e893cf;
+    padding: 10px;
+    border-radius: 10px;
+}
+.single-review img{
+    width: 60px;
+    height: 60px;
+}
+.top-review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

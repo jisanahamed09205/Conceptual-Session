@@ -1,0 +1,7 @@
+.parent{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    position: static;
+    margin: 50px;
+}
